@@ -14,11 +14,16 @@
  //Here is the client class that will run everything. 
  public class MultiClient{
 
-     ArrayList<Integer> arrList = null; 
+     ArrayList<Integer> arrList = new ArrayList<Integer>(); 
      //Main class for the program. 
      public static void main(String[] args){
 
-         //Need to add some shit
+         MultiClient newClient = new MultiClient();
+         newClient.getArray();
+         
+         for(int iterator : newClient.arrList){
+             System.out.print(iterator + " ");
+         }
      }
 
      //Creating the get array method that will allow an array to be filled for summation. 
@@ -30,10 +35,24 @@
          while(helperFlag){
 
              System.out.println("Please choose a number to add to the array: "); //Prompt user for input.
-             char nextChar = newScan.nextChar(); //Grab the user input. 
+             char nextChar = newScan.next().charAt(0); //Grab the user input. 
+             if((nextChar - 113) == 0){
+                 //Land here if user has input a 'q' to quit
+                 System.out.println("Thank you for adding elements!");
+                 helperFlag = false; 
+             }
+             else if((nextChar > 47) && (nextChar < 58)){
 
-             if(nextChar > ) 
+                 //Add the number to the array. 
+                 int helperVar = Character.getNumericValue(nextChar); //Get the numeric value of the character. 
+                 arrList.add(helperVar); //Add new int to the array. 
+             }
+             else{
+
+                 System.out.println("You must enter a valid input betweeon 0-9.");
+             }
          }
+         return arrList;
      }
 
  }
