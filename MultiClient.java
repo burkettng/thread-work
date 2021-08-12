@@ -12,7 +12,7 @@
  import java.util.ArrayList; //Import ArrayList 
 
  //Here is the client class that will run everything. 
- public class MultiClient{
+ public class MultiClient extends Thread{
 
      ArrayList<Integer> arrList = new ArrayList<Integer>(); 
      //Main class for the program. 
@@ -53,6 +53,12 @@
              }
          }
          return arrList;
+     }
+
+     //Here is the actual math that we will need to bread down into threads.
+     public int sumArray(ArrayList<Integer> arr){
+         return 0;
+         //fuck me.
      }
 
  }
