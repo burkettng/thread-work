@@ -63,11 +63,28 @@
 	 //Here I need to make a decision based on if the arrSize is even or odd.
 	 //Here I check if it's even.
 	 if((arrSize % 2) == 0){
+		
+		//Now we need to run a try and catch. 
+		try{
 
+			
+		}
+		catch(Exception e){
+			
+			System.out.println("An exception has been caught!!!!!"); //Display that an exception has been caught. 
+		}
 	 }
 	 //If it's not even then if has to be odd. 
 	 else{
 
+		//Now I need to do a try catch even if the arrSize is odd.
+		try{{
+
+		}
+		catch(Exception e){
+
+			System.out.println("An exception has been caught!!!!!"); //Display that an exception has been caught. 
+		}
 	 }
 	 return 0;
          //fuck me.
