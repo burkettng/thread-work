@@ -57,7 +57,19 @@
 
      //Here is the actual math that we will need to bread down into threads.
      public int sumArray(ArrayList<Integer> arr){
-         return 0;
+         
+     	 int arrSize = arr.size(); //Get the length of the ArrayList that was passed in. 
+
+	 //Here I need to make a decision based on if the arrSize is even or odd.
+	 //Here I check if it's even.
+	 if((arrSize % 2) == 0){
+
+	 }
+	 //If it's not even then if has to be odd. 
+	 else{
+
+	 }
+	 return 0;
          //fuck me.
      }
 
